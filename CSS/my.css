@@ -1,0 +1,5 @@
+ table, th, td {
+    border: 1px solid#ff00ff;
+    background-color: #ff0;
+}
+table mytable{width:50%;}
