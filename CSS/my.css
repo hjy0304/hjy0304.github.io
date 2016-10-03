@@ -3,3 +3,12 @@
     background-color: #ff0;
 }
 table mytable{width:50%;}
+.main{color :#dbf}
+.header{padding-bottom: 20px;
+margin-bottom: 32px;
+border-bottom: 1px solid #eee}
+h1.title{
+    border-bottom: 1px solid #e5e5e5;
+    padding-bottom: 25px ;
+    margin-bottom: 30px;
+}
