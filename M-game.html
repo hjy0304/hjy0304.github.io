@@ -1,0 +1,186 @@
+<!DOCtype html>
+<html lang="en">
+
+<head>
+	<title>HJY</title>
+	<!--<meta http-equiv="content-type" content="text/html; charset=utf-8" />-->
+	<meta charset="UTF-8">
+
+	<script src="js/M-config.js"></script>
+	<script src="js/M-skel.min.js"></script>
+
+	<noscript>
+	
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/style-desktop.css" />
+	</noscript>
+	<!--文件鏈接-->
+</head>
+
+<body class="homepage">
+	<!--Header wrapper -->
+	<div id="header-wrapper">
+		<!-- Header -->
+		<div id="header" class="container">
+
+			<!-- Logo -->
+			<h1 id="logo"><a href="#">21點 </a></h1>
+
+			<!-- Nav -->
+			<nav id="nav">
+				<ul>
+					<li><a class="icon icon-home" href="M-home.html"><span>Home </span></a></li>
+					<li><a href="M-travel.html" class="icon icon-plane"><span>Travel</span></a></li>
+					<li><a class="icon icon-play" href="M-game.html"><span>Game</span></a></li>
+					<li><a class="icon icon-cog" href="M-about.html"><span>About me</span></a></li>
+
+				</ul>
+			</nav>
+		</div>
+
+	</div>
+	<!--以上每頁都有-->
+
+	</head>
+
+	<body>
+		<div id="main-wrapper">
+
+
+			<script language="Javascript">
+<!-- Hide from non-Javascript browsers
+function random(maxValue)
+{
+   day = new Date();
+   hour = day.getHours();
+   min = day.getMinutes();
+   sec = day.getSeconds();
+   return (((hour + 1) * (min + 1) * sec) % maxValue) + 1;
+}
+function pickSuit()
+{
+   suit = random(4);
+   if(suit == 1)
+      return "Spades";
+   if(suit == 2)
+      return "Clubs";
+   if(suit == 3)
+      return "Diamonds";
+   return "Hearts";
+}
+function cardName(card)
+{
+   if(card == 1)
+      return "Ace";
+   if(card == 11)
+      return "Jack";
+   if(card == 12)
+      return "Queen";
+   if(card == 13)
+      return "King";
+   return "" + card;
+}
+function cardValue(card)
+{
+   if(card == 1)
+      return 11;
+   if(card > 10)
+      return 10;
+   return card;
+}
+function PickACard(strWho)
+{
+   card = random(13);
+   suit = pickSuit();
+   return cardValue(card);
+}
+function NewHand(form)
+{
+   form.dealer.value = 0;
+   form.you.value = 0;
+   form.dealer.value = eval(form.dealer.value) + PickACard("Dealer");
+   form.you.value = eval(form.you.value) + PickACard("You");
+}
+function Dealer(form)
+{
+   while(form.dealer.value < 17)
+   {
+      form.dealer.value = eval(form.dealer.value) + PickACard("Dealer");
+   }
+}
+function User(form)
+{
+   form.you.value = eval(form.you.value) + PickACard("You");
+   if(form.you.value > 21)
+   {
+      alert("哈哈哈哈！！！你爆了！");
+   }
+}
+function LookAtHands(form)
+{
+   if(form.dealer.value > 21)
+   {
+      alert("哎呦庄家爆了，恭喜你赢了");
+   }
+   else   if(form.you.value > form.dealer.value)
+   {
+      alert("了不起!你赢了!");
+   }
+   else
+   if(form.dealer.value == form.you.value)
+   {
+      alert("Push!");
+   }
+   else
+   {
+      alert("庄家赢了!");
+   }
+}
+//-->
+</script>
+
+
+			<center>开始游戏请点击“洗牌”</center>
+			<hr>
+			<center>
+				<form>
+					<table border=""=3>
+						<tr>
+							<td>庄家：</td>
+							<td>
+								<input type=TEXT NAME=dealer size="20">点</td>
+						</TR>
+						<TR>
+							<td>你：</td>
+							<td>
+								<input type=TEXT NAME=you size="20">点</td>
+						</TR>
+					</TABLE>
+					<P>
+						<center>
+							<input type=BUTTON VALUE="再来一张" onClick=User(this.form)>
+							<input type=BUTTON VALUE="亮牌" onClick="Dealer(this.form);LookAtHands(this.form);">
+							<input type=BUTTON VALUE="洗牌" onClick=NewHand(this.form)>
+						</center>
+
+		</div>
+		<!--footer-wrapper-->
+
+		<div id="footer-wrapper">
+			<p><strong>游戲規則：</strong></br>
+				庄家给每个玩家和自己发两张牌，一张牌面朝上（叫明牌），一张牌面朝下（叫暗牌）。</br>大家手中扑克点数的计算是：K、Q、J和10牌都算作10点。A 牌既可算作1点也可算作11点，由玩家自己决定。其余所有2至9牌均按其原面值计算。</br>
+				首先玩家开始要牌，目的是尽量往21点靠，靠得越近越好，最好就是21点了。在要牌的过程中，如果所有的牌加起来超过21点，玩家就输了——叫爆掉(Bust)，游戏结束。</br>
+				假如玩家没爆掉，又决定不要牌了，庄家就把他的那张暗牌打开来。一般到17点或17点以上不再拿牌，但也有可能15到16点甚至12到13点就不再拿牌或者18到19点继续拿牌。</br>假如庄家爆掉了，那他就输了。假如他没爆掉，那么你就与他比点数大小，大为赢。一样的点数为平手。
+			</p>
+			<!-- Copyright -->
+			<div id="copyright" class="container">
+				<ul class="links">
+					&copy; Copyright &copy; 2016.HJY.
+				</ul>
+			</div>
+
+		</div>
+
+	</body>
+
+</html>
