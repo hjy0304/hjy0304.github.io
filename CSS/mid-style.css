@@ -1,0 +1,128 @@
+/*********************************************************/
+/*                     basic                             */
+/*********************************************************/
+body
+	{
+		background: #f0f0f0;
+	}
+
+
+
+
+
+/*image */
+
+		.image
+		{
+			display: inline-block;
+			border: solid 6px #ebebeb !important;
+			-moz-transition: opacity 0.25s ease-in-out;
+			-webkit-transition: opacity 0.25s ease-in-out;
+			-o-transition: opacity 0.25s ease-in-out;
+			-ms-transition: opacity 0.25s ease-in-out;
+			transition: opacity 0.25s ease-in-out;
+		}
+		
+		
+		
+
+
+.image-left
+			{
+				float: left;
+				margin: 0 1.5em 1.5em 0;
+				position: relative;
+				top: 0.5em;
+			}
+	
+
+/*********************************************************/
+/*                     icon                              */
+/*********************************************************/
+
+	.icon
+	{
+		text-decoration: none;
+	}
+
+		.icon:before
+		{
+			font-size: 1.25em;
+			text-decoration: none;
+			font-family: FontAwesome;
+			font-weight: normal;
+			font-style: normal;
+			-webkit-text-rendering: optimizeLegibility;
+			-moz-text-rendering: optimizeLegibility;
+			-ms-text-rendering: optimizeLegibility;
+			-o-text-rendering: optimizeLegibility;
+			text-rendering: optimizeLegibility;
+			-webkit-font-smoothing: antialiased;
+			-moz-font-smoothing: antialiased;
+			-ms-font-smoothing: antialiased;
+			-o-font-smoothing: antialiased;
+			font-smoothing: antialiased;
+			-webkit-font-feature-settings: "liga" 1, "dlig" 1;
+			-moz-font-feature-settings: "liga=1, dlig=1";
+			-ms-font-feature-settings: "liga" 1, "dlig" 1;
+			-o-font-feature-settings: "liga" 1, "dlig" 1;
+			font-feature-settings: "liga" 1, "dlig" 1;
+		}
+
+		/* Font Awesome (http://fortawesome.github.com/Font-Awesome/) */
+
+		.icon-envelope:before		{content:"\f003";}
+	
+		.icon-cog:before			{content:"\f013";}
+		
+		.icon-home:before			{content:"\f015";}
+		
+		.icon-play:before			{content:"\f04b";}
+		
+		.icon-plane:before			{content:"\f072";}
+	
+
+
+/*********************************************************/
+/*                    nav                                */
+/*********************************************************/
+
+
+/*********************************************************/
+/*                    wrapper                      */
+/*********************************************************/
+
+/*header wrapper*/
+#header-wrapper
+	{
+		position: relative;
+		background: #fff;
+		text-align: center;
+	}
+
+#main-wrapper
+	{
+		position: relative;
+		overflow: hidden;
+		background: #fff;
+	}
+	
+	#footer-wrapper
+	{
+		position: relative;
+		overflow: hidden;
+		border-top: solid 2px #e5e5e5;
+		background: #f0f0f0;
+	}
+
+
+
+
+/*********************************************************/
+/*                     copyright                         */
+/*********************************************************/
+#copyright
+	{
+		border-top: solid 2px #e5e5e5;
+		text-align: center;
+	}

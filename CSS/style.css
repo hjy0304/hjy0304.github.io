@@ -135,7 +135,7 @@
 				box-shadow: 0.125em 0.175em 0 0 rgba(0,0,0,0.125);
 			}
 
-			ul.icons > li:first-child
+			/*ul.icons > li:first-child
 			{
 				padding-top: 0;
 			}
@@ -160,7 +160,7 @@
 			ol.style1 li:first-child
 			{
 				margin-top: 0;
-			}
+			}*/
 
 	/* Tables */
 	
@@ -313,7 +313,7 @@
 		text-align: center;
 	}
 
-		#header-wrapper p
+		/*#header-wrapper p
 		{
 			text-align: center;
 		}
@@ -358,7 +358,7 @@
 		{
 			margin-top: 1.25em;
 		}
-
+*/
 	#main-wrapper
 	{
 		position: relative;
@@ -374,7 +374,7 @@
 		background: #f0f0f0;
 	}
 	
-		#footer-wrapper form input.text,
+		/*#footer-wrapper form input.text,
 		#footer-wrapper form select,
 		#footer-wrapper form textarea
 		{
@@ -391,7 +391,7 @@
 		#footer-wrapper h2
 		{
 			text-align: center;
-		}
+		}*/
 
 /*********************************************************************************/
 /* Header                                                                        */
@@ -458,7 +458,7 @@
 					-ms-transition: color 0.25s ease-in-out, background 0.25s ease-in-out;
 					transition: color 0.25s ease-in-out, background 0.25s ease-in-out;
 				}
-		
+/*		
 				#nav > ul > li > a > span
 				{
 					-moz-transition: color 0.25s ease-in-out;
@@ -474,22 +474,22 @@
 
 				#nav > ul > li:hover > a
 				{
-				}
+				}*/
 			
-					#nav > ul > li:hover > a > span
+					/*#nav > ul > li:hover > a > span
 					{
 						color: #ED786A;
-					}
-
+					}*/
+/*
 			#nav > ul > li.active
 			{
 			}
 
 				#nav > ul > li.active > a
 				{
-				}
+				}*/
 
-					#nav > ul > li.active > a:before
+					/*#nav > ul > li.active > a:before
 					{
 						background: #ED786A;
 						color: #fff;
@@ -499,14 +499,14 @@
 					{
 						color: #ED786A;
 					}
-
+*/
 
 	
 
 /*********************************************************************************/
 /* Content                                                                       */
 /*********************************************************************************/
-	
+/*	
 	#content
 	{
 	}
@@ -523,13 +523,13 @@
 			{
 				border-top: 0;
 				box-shadow: none;
-			}
+			}*/
 	
 /*********************************************************************************/
 /* Sidebar                                                                       */
 /*********************************************************************************/
 	
-	#sidebar
+	/*#sidebar
 	{
 	}
 
@@ -545,7 +545,7 @@
 			{
 				border-top: 0;
 				box-shadow: none;
-			}
+			}*/
 	
 /*********************************************************************************/
 /* Copyright                                                                     */
