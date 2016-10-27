@@ -1,0 +1,77 @@
+/*********************************************************/
+/*                     basic                             */
+/*********************************************************/
+body
+	{
+		background: #f0f0f0;
+	}
+
+h,p  { font-weight: 600;
+		text-transform: uppercase;
+		color: #888; }
+
+
+
+/*********************************************************************************/
+/* Nav                                                                           */
+/*********************************************************************************/
+
+
+
+
+	
+		
+			#nav > ul > li > a
+			{
+				border: 0;
+				text-decoration: none;
+				text-transform: uppercase;
+				font-weight: 400;
+				color: #777;
+				outline: 0;
+			}
+
+
+
+/*********************************************************/
+/*                    wrapper                      */
+/*********************************************************/
+
+/*header wrapper*/
+#header-wrapper
+	{
+		position: relative;
+		background: #fff;
+		text-align: center;
+	}
+
+#main-wrapper
+	{
+		position: relative;
+		overflow: hidden;
+		background: #fff;
+	}
+	
+
+
+#footer-wrapper {
+	color: #c6c6c6;
+	background-color: #f0f0f0;
+	
+	font-size: 1rem;
+	padding-top: 40px;
+	padding-bottom: 20px;
+}
+
+
+
+
+
+/*********************************************************/
+/*                     copyright                         */
+/*********************************************************/
+	#copyright
+	{
+		border-top: solid 2px #e5e5e5;
+		text-align: center;
+	}
