@@ -12,10 +12,7 @@
 
 
 
-	<script src="./js/bootstrap.js"></script>
-
-    <script src="./js/mid.js"></script>
-
+	<script src="js/bootstrap.js"></script>
 
 
 
@@ -34,7 +31,7 @@
 
 
 
- <!--Nav -->
+<!--Nav -->
 
 <div id="nav">
 	<ul class="nav nav-pills">
@@ -45,7 +42,7 @@
 			<a class="nav-link" href="M-travel.html">Travel</a>
 		</li>
 		<li class="nav-item">
-			<a class="nav-link" href="M-game.html">Game</a>
+			<a class="nav-link" href="121.point1.html">Game</a>
 		</li>
 		<li class="nav-item">
 			<a class="nav-link " href="M-about.html">About</a>
@@ -53,11 +50,12 @@
 	</ul>
 </div>
 
-     
+
 
 
 
 <body>
+
 
 	<!--header-wrapper-->
 	<div id=header-wrapper>
@@ -70,55 +68,70 @@
 			</div>
 		</div>
 	</div>
+	<hr>
 
-	<!--以上每頁都有-->
+	<table id="tableboard">
+		<tr>
+			<p>莊家</p>
+			<td id="computer"><img src="images\zhuangjia.jpg" /></td>
+			<td>	<td><td><td><td><td><td><td><td><td><td><td><td>
+		</tr>
+		<tr>
+			
+			<td id="player"><img src="images\14353318460001.jpg" /></td>
+   
+			<td>
+			<td>
+			<td>
+			<td>
+			<td>
+			<td>
+			<td>
+			<td>
+			<td>
+			<td>
+			<td>
+			<td>
+			<td>
+				
+		</tr>
+		
+	</table>
+	<hr>
+	<table>
+		<tr>
+			<td>
+			<div id="score"></div>
+			</td>
+			<td>
+			<div id="show">請做出選擇並點擊</div>
+			</td>
+		</tr>
+	</table>
+ 
+	<hr>
+  	<center>	<input type="button" id="NeedCard" value="加一張牌" onclick="NeedCard();" />
+	<input type="button" id="notNeedCard" value="不要牌了" onclick="notNeedCard();" />
 
-	</head>
-
-	<body>
-		<div id="main-wrapper">
+	<input type="button" id="restart" value="再玩一局" onclick="restart();" /></center>
 
 
-			<script language="Javascript">
+	<!--以下-->
 
+	<!--liubai-->
 
+	<div id="liubai" class="container">
+		<div class="row">
+			<div class="col-md-12">
 
-</script>
-
-
-			<center>开始游戏请点击“洗牌”</center>
-			<hr>
-			<center>
-				<form>
-					<table border=""=3>
-						<tr>
-							<td>庄家：</td>
-							<td>
-								<input type=TEXT NAME=dealer size="20">点</td>
-						</TR>
-						<TR>
-							<td>你：</td>
-							<td>
-								<input type=TEXT NAME=you size="20">点</td>
-						</TR>
-					</TABLE>
-					<P>
-						<center>
-							<input type=BUTTON VALUE="再来一张" onClick=User(this.form)>
-							<input type=BUTTON VALUE="亮牌" onClick="Dealer(this.form);LookAtHands(this.form);">
-							<input type=BUTTON VALUE="洗牌" onClick=NewHand(this.form)>
-						</center>
-
-		</div>
-		<!--liubai-->
-
-		<div id="liubai" class="container">
-			<div class="row">
-				<div class="col-md-12">
-					
-				</div>
 			</div>
 		</div>
+	</div>
+
+
+
+
+
 	<!-- Footer Wrapper -->
 		<div id="footer-wrapper">
 <p><strong>游戲規則：</strong></br>
@@ -153,20 +166,15 @@
 
 		</div>
 
-		<!-- jQuery first, then Tether, then Bootstrap JS. -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha384-3ceskX3iaEnIogmQchP8opvBy3Mi7Ce34nWjpBIwVTHfGYWQS9jwHDVRnpKKHJg7"
-			crossorigin="anonymous"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/js/tether.min.js" integrity="sha384-XTs3FgkjiBgo8qjEjBk0tGmf3wPrWtA6coPfQDfFEY8AnYJwjalXCiosYRBIBZX8"
-			crossorigin="anonymous"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js" integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK"
-			crossorigin="anonymous"></script>
-</body>
+	<!-- jQuery first, then Tether, then Bootstrap JS. -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha384-3ceskX3iaEnIogmQchP8opvBy3Mi7Ce34nWjpBIwVTHfGYWQS9jwHDVRnpKKHJg7"
+		crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/js/tether.min.js" integrity="sha384-XTs3FgkjiBgo8qjEjBk0tGmf3wPrWtA6coPfQDfFEY8AnYJwjalXCiosYRBIBZX8"
+		crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js" integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK"
+		crossorigin="anonymous"></script>
 
-</html>
-
-
-</div>
-
+	<script src="./js/121.js"></script>
 </body>
 
 </html>
