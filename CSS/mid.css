@@ -4,34 +4,76 @@
 body
 	{
 		background: #f0f0f0;
+	
 	}
 
 h,p  { font-weight: 600;
 		text-transform: uppercase;
 		color: #888; }
 
+a{
+	
+	font-size:30px;
+text-shadow:5px 5px 2px #f0f0f0
+
+}
+p2 {
+
+	font-size:25px;
+	 font-weight: 600;
+		text-transform: uppercase;
+		color: #888; }
 
 
 /*********************************************************************************/
 /* Nav                                                                           */
 /*********************************************************************************/
 
+#logo
+{
+	 text-shadow:5px 5px 2px #f0f0f0;
+	color: #ed786a;
+	font-size:70px;
 
+}
 
 
 	
 		
 			#nav > ul > li > a
 			{
-				border: 0;
-				text-decoration: none;
-				text-transform: uppercase;
+		
+				
 				font-weight: 400;
 				color: #777;
 				outline: 0;
 			}
 
 
+
+
+
+/*********************************************************/
+/*                 image                      */
+/*********************************************************/
+#card
+{
+	 border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 25px ;
+    margin-bottom: 30px;
+}
+#botton
+
+{
+				background-color: #ed786a;
+}
+
+#imageshow
+{
+	 border-bottom: 2px solid #f0f0f0;
+	 margin-bottom:5px;
+	 	font-size:30px;
+}
 
 /*********************************************************/
 /*                    wrapper                      */
@@ -40,7 +82,7 @@ h,p  { font-weight: 600;
 /*header wrapper*/
 #header-wrapper
 	{
-		position: relative;
+		
 		background: #fff;
 		text-align: center;
 	}
@@ -50,8 +92,20 @@ h,p  { font-weight: 600;
 		position: relative;
 		overflow: hidden;
 		background: #fff;
+	
 	}
 	
+#liubai
+{
+
+	padding-bottom: 40px;
+}
+
+#liubai1
+{
+
+	padding-bottom: 30px;
+}
 
 
 #footer-wrapper {
