@@ -14,9 +14,9 @@ var cards = [
     "spade08", "spade09", "spade10", "spade11", "spade12", "spade13"
 ];
 
-//生成隨機數
+//生成隨機數  //也可以寫成var getRand={};getRand.function....
 var getRand = function (begin, end) {
-    return Math.floor(Math.random() * (end - begin)) + begin;
+    return Math.floor(Math.random() * (end - begin)) + begin;//http://blog.csdn.net/fox64194167/article/details/48650187
 }
 
 //洗牌
@@ -24,16 +24,16 @@ var rand, tmp;
 for (var i = 0; i < 1000; i++) {
     rand = getRand(1, 52);
     tmp = cards[0];
-    cards[0] = cards[rand];
-    cards[rand] = tmp;
+    cards[0] = cards[rand]; //不加這句刷新後顯示的是固定的牌
+   cards[rand] = tmp; // 加上這句的話每次重新加載都可以獲得新的牌
 }
 
 //玩家手牌
 var cards1 = [GetNewCard(), GetNewCard()];
 var cards2 = [GetNewCard(), GetNewCard()];
 
-var table = document.getElementById("tableboard");
-table.rows[0].cells[1].innerHTML = "<img src=\"images\\back.jpg\" />";
+var table = document.getElementById("tableboard"); 
+table.rows[0].cells[1].innerHTML = "<img src=\"images\\back.jpg\" />"; //操作表格http://www.cnblogs.com/star-studio/archive/2011/11/28/2265785.html
 table.rows[0].cells[2].innerHTML = "<img src=\"images\\" + cards1[1] + ".jpg\" />";
 table.rows[1].cells[1].innerHTML = "<img src=\"images\\" + cards2[0] + ".jpg\" />";
 table.rows[1].cells[2].innerHTML = "<img src=\"images\\" + cards2[1] + ".jpg\" />";
@@ -45,8 +45,8 @@ function NeedCard() {
     if (checkIfBust("player")) {
         document.getElementById("show").innerHTML = "你爆了";//JS輸出 向 id="show" 的 HTML 元素输出文本 "你爆了" 
         //document.getElementById(" ") 得到的是一个对象
-        document.getElementById("NeedCard").disabled = true;
-        document.getElementById("notNeedCard").disabled = true;
+        document.getElementById("NeedCard").disabled = true;//http://www.w3school.com.cn/tiy/t.asp?f=html_input_disabled
+        document.getElementById("notNeedCard").disabled = true; //控制id等于notNeedCard的input控件的可用性 =true時 不可用
         winner = "computer";
     }
     showScore();
@@ -74,7 +74,7 @@ function notNeedCard() {
         var result2 = calcResult("player");
         if (result1 == result2) {
             document.getElementById("show").innerHTML = "平局 ";
-        } else if (result1 > result2) {                                       //OK
+        } else if (result1 > result2) {                                       
             document.getElementById("show").innerHTML = "你輸了 ";
         } else if (result1 < result2) {
             document.getElementById("show").innerHTML = "你贏了 ";
@@ -106,7 +106,8 @@ function checkIfBust(player) {
     if (player == "computer") {
         for (var i = 0; i < cards1.length; i++) {
 
-            var c = parseInt(cards1[i].substr(cards1[i].length - 2), "10");
+            var c = parseInt(cards1[i].substr(cards1[i].length - 2), "10");//parseInt()将一个字符串转换成整数
+            //substr 字符串的第幾位數起 eg club02=6    cards1[i].length - 2 =6-2=4 club02位數 012345 第四位數起是02
             if (c > 10) {
                 c = 10;
             }
