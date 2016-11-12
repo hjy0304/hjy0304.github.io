@@ -1,0 +1,150 @@
+/*********************************************************/
+/*                     basic                             */
+/*********************************************************/
+body
+	{
+		background: #f0f0f0;
+	
+	}
+
+h,p  { font-weight: 600;
+		text-transform: uppercase;
+		color: #888; }
+
+a{
+	
+	font-size:30px;
+text-shadow:5px 5px 2px #f0f0f0
+
+}
+p2 {
+
+	font-size:25px;
+	 font-weight: 600;
+		text-transform: uppercase;
+		color: #888; }
+
+
+/*********************************************************************************/
+/* Nav                                                                           */
+/*********************************************************************************/
+
+#logo
+{
+	 text-shadow:5px 5px 2px #f0f0f0;
+	color: #ed786a;
+	font-size:70px;
+
+}
+
+
+	
+		
+			#nav > ul > li > a
+			{
+		
+				
+				font-weight: 400;
+				color: #777;
+				outline: 0;
+			}
+
+
+
+
+
+/*********************************************************/
+/*                 image                      */
+/*********************************************************/
+#card
+{
+	 border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 25px ;
+    margin-bottom: 30px;
+}
+#botton
+
+{
+				background-color: #ed786a;
+}
+
+#imageshow
+{
+	 border-bottom: 2px solid #f0f0f0;
+	 margin-bottom:5px;
+	 	font-size:30px;
+}
+
+/*********************************************************/
+/*                    wrapper                      */
+/*********************************************************/
+
+/*header wrapper*/
+#header-wrapper
+	{
+		
+		background: #fff;
+		text-align: center;
+	}
+
+#main-wrapper
+	{
+		position: relative;
+		overflow: hidden;
+		background: #fff;
+	
+	}
+	
+#liubai
+{
+
+	padding-bottom: 40px;
+}
+
+#liubai1
+{
+
+	padding-bottom: 30px;
+}
+
+
+#footer-wrapper {
+	color: #c6c6c6;
+	background-color: #f0f0f0;
+	
+	font-size: 1rem;
+	padding-top: 40px;
+	padding-bottom: 20px;
+}
+
+
+
+
+
+/*********************************************************/
+/*                     copyright                         */
+/*********************************************************/
+	#copyright
+	{
+		border-top: solid 2px #e5e5e5;
+		text-align: center;
+	}
+
+/*blackJS*/
+
+
+	table th
+			{
+					text-align: center;
+					text-decoration: none;
+					font-weight: normal;
+					padding: 3px 6px 3px 6px;
+					width:200px;
+			}
+			table td
+			{
+					vertical-align: center;
+					text-align: center;
+					padding: 3px 6px 3px 6px;
+					margin: 0px;
+			}
