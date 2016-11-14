@@ -21,7 +21,6 @@
 
 function move() {
 
-
  var cx = $('#cx1').val();
  var cy= $('#cy1').val();
  var s=70;
@@ -33,19 +32,20 @@ c1.attr('cx',cx).attr('cy',cy).attr( 'r',100).attr('stroke','#AE092B').attr('str
 r1.attr('x',cx-35).attr('y',cy-36).attr('rx',5).attr('ry',5).attr('width',s).attr('height',s).attr('stroke','#AE092B').attr('stroke-width',18).attr('fill','#FFFFFF');
 
 
-
-
 }
 
 $('#yidon').bind('click', move);
  
 
-$(document).ready(function(){
-  $(".btn1").click(function(){
-  $("svg").fadeOut()
-  });
-  $(".btn2").click(function(){
-  $("svg").fadeIn();
-  });
-});
+// $(document).ready(function(){
+//   $(".btn1").click(function(){
+//   $("svg").fadeOut()
+//   });
+//   $(".btn2").click(function(){
+//   $("svg").fadeIn();
+//   });
+// });
 
+// var getRand = function (begin, end) {
+//     return Math.floor(Math.random() * (end - begin)) + begin;//http://blog.csdn.net/fox64194167/article/details/48650187
+// }
