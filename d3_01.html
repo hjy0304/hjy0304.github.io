@@ -12,10 +12,7 @@
 
 <body>
     <h1> Hello,D3.js</h1>
-    <svg width="1000" height="500">
-
-
-    </svg>
+  
     <div class="container">
         <div class="row">
             <div class="col-md-12">
@@ -23,25 +20,39 @@
                     <div class="form-group row">
                         <label for="example-text-input" class="col-xs-3 col-form-label">圓心橫座標（0~1000）</label>
                         <div class="col-xs-6">
-                            <input class="form-control" type="text"  id="cx1">
+                            <input class="form-control" type="text" id="cx1">
                         </div>
+                        <button class="btn1">Hide svg</button>
                     </div>
                     <div class="form-group row">
                         <label for="example-text-input" class="col-xs-3 col-form-label">圓心縱座標（0~500）</label>
                         <div class="col-xs-6">
-                            <input class="form-control" type="text"  id="cy1">
+                            <input class="form-control" type="text" id="cy1">
+
                         </div>
+                          <button class="btn2">Show svg</button>
                     </div>
+
                     <div class="form-group row">
+                      
                         <button id="yidon" type="button" class="btn btn-primary">產生圖案</button>
                     </div>
                     <!--<input id="input" class="form-control" type="text">-->
-
+                  
                 </div>
+
             </div>
         </div>
     </div>
+
     </div>
+
+
+  <svg width="1000" height="500">
+<rect x="50" y="0"  width="950" height="500"
+ style="fill:#FFFFFF;stroke:#AE092B;stroke-width:5;" />
+
+    </svg>
 
 
 

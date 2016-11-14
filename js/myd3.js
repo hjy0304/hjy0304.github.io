@@ -20,16 +20,18 @@
 
 
 function move() {
-var svgctrl = d3.select('svg');
+
 
  var cx = $('#cx1').val();
  var cy= $('#cy1').val();
  var s=70;
-  
+
+  var svgctrl = d3.select('svg');
 var c1 = svgctrl.append('circle');
 c1.attr('cx',cx).attr('cy',cy).attr( 'r',100).attr('stroke','#AE092B').attr('stroke-width',18).attr('fill','#FFFFFF');
   var r1 = svgctrl.append('rect');
 r1.attr('x',cx-35).attr('y',cy-36).attr('rx',5).attr('ry',5).attr('width',s).attr('height',s).attr('stroke','#AE092B').attr('stroke-width',18).attr('fill','#FFFFFF');
+
 
 
 
@@ -38,6 +40,12 @@ r1.attr('x',cx-35).attr('y',cy-36).attr('rx',5).attr('ry',5).attr('width',s).att
 $('#yidon').bind('click', move);
  
 
-
-
+$(document).ready(function(){
+  $(".btn1").click(function(){
+  $("svg").fadeOut()
+  });
+  $(".btn2").click(function(){
+  $("svg").fadeIn();
+  });
+});
 
